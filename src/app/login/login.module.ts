@@ -24,11 +24,8 @@ import {MatInputModule} from "@angular/material/input";
     ReactiveFormsModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule,
-    MatListModule,
     MatCardModule,
     MatFormFieldModule,
-    MatToolbarModule,
     MatInputModule
   ]
 })
