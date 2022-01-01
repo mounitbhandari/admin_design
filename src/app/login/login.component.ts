@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
   loginForm!: FormGroup;
   constructor(private fb: FormBuilder) { }
   hide: boolean = false;
@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
     if (!this.loginForm.valid) {
       return;
     }
-    console.log(this.loginForm.value);
-  
+
+
   }
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartDataset, ChartOptions } from 'chart.js';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +6,7 @@ import { ChartDataset, ChartOptions } from 'chart.js';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +15,4 @@ export class DashboardComponent implements OnInit {
   onTabChanged(event:any){
     console.log(event)
   }
-
 }

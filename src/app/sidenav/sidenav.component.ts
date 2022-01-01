@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-display=false;
+  display=false;
   constructor() { }
 
   ngOnInit(): void {
   }
   toggle(){
-   this.display=!this.display;
+    this.display=!this.display;
   }
 
 }
