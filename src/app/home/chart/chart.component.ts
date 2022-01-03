@@ -1,30 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
-import { Label } from 'ng2-charts';
+
 @Component({
   selector: 'app-chart',
   templateUrl: './chart.component.html',
   styleUrls: ['./chart.component.scss']
 })
 export class ChartComponent implements OnInit {
-  public barChartOptions: ChartOptions = {
-    responsive: true,
-  };
-  public barChartLabels: Label[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-  public barChartType: ChartType = 'bar';
-  public barChartLegend = true;
-  public barChartPlugins = [];
-
-  public barChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
-  ];
-
-  constructor() {
-
-  }
-
   ngOnInit(): void {
+      
   }
+  data = [
+    { name: '2017', value: 10 },
+    { name: '2018', value: 11 },
+  ]
 
+  series = [
+    {
+      "name": "New Zealand",
+      "series": [
+        {
+          "value": 2720,
+          "name": "2016-09-21T20:46:06.473Z"
+        },
+        {
+          "value": 5928,
+          "name": "2016-09-23T03:57:30.183Z"
+        },
+        {
+          "value": 6410,
+          "name": "2016-09-22T17:59:22.921Z"
+        },
+        {
+          "value": 4938,
+          "name": "2016-09-15T05:05:42.136Z"
+        },
+        {
+          "value": 6462,
+          "name": "2016-09-18T03:57:09.216Z"
+        }
+      ]
+    },
+  ]
 }
